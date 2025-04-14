@@ -1,11 +1,15 @@
-import { Form } from "./Components/Form.jsx";
-import { Title } from "./components/Title.jsx";
+import { Footer } from "./Components/Footer";
+import { Header } from "./Components/Header";
+import { MainContent } from "./Components/Main";
 
-export function App() {
+export function Page() {
   return (
-    <div className="flex gap-10 flex-col justify-center items-center h-screen w-screen">
-      <Title></Title>
-      <Form></Form>
-    </div>
+    <>
+      <div className="flex flex-col justify-center items-center gap-50  p-4  h-screen w-screen bg-gradient-to-l from-black to-90%">
+        <Header />
+        <MainContent />
+        <Footer />
+      </div>
+    </>
   );
 }
